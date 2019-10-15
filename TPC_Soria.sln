@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPC_Soria", "TPC_Soria.csproj", "{BE38CAFE-E28E-4283-A82D-D11BE32ADD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "..\Dominio\Dominio.csproj", "{562CCFF8-4669-4504-9C62-60BE874CC1FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\Negocio\Negocio.csproj", "{AF0AC01A-20CB-42E9-A499-FE3A383452A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE38CAFE-E28E-4283-A82D-D11BE32ADD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE38CAFE-E28E-4283-A82D-D11BE32ADD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE38CAFE-E28E-4283-A82D-D11BE32ADD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE38CAFE-E28E-4283-A82D-D11BE32ADD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562CCFF8-4669-4504-9C62-60BE874CC1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562CCFF8-4669-4504-9C62-60BE874CC1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562CCFF8-4669-4504-9C62-60BE874CC1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562CCFF8-4669-4504-9C62-60BE874CC1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4253C673-36A9-4043-B135-A08969C0C190}
+	EndGlobalSection
+EndGlobal
