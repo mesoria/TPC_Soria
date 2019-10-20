@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "..\Dominio\Domin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\Negocio\Negocio.csproj", "{AF0AC01A-20CB-42E9-A499-FE3A383452A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMaster", "..\DataMaster\DataMaster.csproj", "{CBF6FEEA-FDAD-4563-A5C6-D77068896F5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF0AC01A-20CB-42E9-A499-FE3A383452A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF6FEEA-FDAD-4563-A5C6-D77068896F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF6FEEA-FDAD-4563-A5C6-D77068896F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF6FEEA-FDAD-4563-A5C6-D77068896F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF6FEEA-FDAD-4563-A5C6-D77068896F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
