@@ -3,61 +3,42 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
     <h3>Lista de Alumnos.</h3>
-
-    <asp:GridView ID="grid" runat="server" CssClass=""  ></asp:GridView>
-    <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-    </div>
-    
-    <div class="Container">
-        <div class="row">
-            <div class="col-6">
-                <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col"  >#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Apellido</th>
-          <th scope="col">DNI</th>
-          <th scope="col">Nacimiento</th>
-        </tr>
-      </thead>
-        <% var i = 1; foreach (var item in Personas)
-           { %>
-              <tbody>
-                <tr>
-                  <th scope="row"><% = i%></th>
-                  <td><% = item.Name %></td>
-                  <td><% = item.Apellido %></td>
-                  <td><% = item.DNI %></td>
-                  <td><% = item.Nacimiento %></td>
-                  <td class="custom-control custom-switch"><input type="checkbox" class="custom-control-input" id="Switch1"></td>
-                </tr>
-                  <%i++;} %>
-              </tbody>
-    </table>
-            </div>
-        </div>
-    </div>
-    <div class="table-responsive">
-  <table class="table">
+             
+<div class="table-responsive">
+    <table class="table">
     <thead>
-      <tr>
-        <th style="width: 10.344827586207%; background-color: #8ac8b6">
-          uno </th>
-        <th style="width: 17.241379310345%; background-color: #64bf64">
-          dos </th>
-        <th style="width: 6.8965517241379%; background-color: #13d229">
-          tres </th>
-        <th style="width: 24.137931034483%; background-color: #708928">
-          cuatro </th>
-        <th style="width: 13.793103448276%; background-color: #678121">
-          cinco </th>
-        <th style="width: 27.586206896552%; background-color: #d7ed7a">
-          seis </th>
-      </tr>
+        <tr>
+            <th style="width: 5%; background-color: #8ac8b6">
+              # </th>
+            <th style="width: 10%; background-color: #13d229">
+              Apellidos </th>
+            <th style="width: 10%; background-color: #64bf64">
+              Nombres </th>
+            <% =Dias() %>
+        </tr>
+        
     </thead>
+         <% var j = 1; foreach (var item in Personas)
+        { %>
+        <tbody>
+        <tr>
+                <th style="width: 5%"><% = j%></th>
+                <th style="width: 15%"><% = item.Apellido %></th>
+                <th style="width: 15%"><% = item.Name %></th>
+            <% DateTime d = DateTime.Now; for (var i = 1; i < d.Day; i++)
+                {
+            %>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id=<%=j %> <%= Asistio(i,item.ID)%> disabled="disabled">
+                      <label class="custom-control-label" for=<%=i %>></label>
+                  </div>
+                </td>
+            <%} %>
+        <%j++;} %>
+        </tr>
+
+    </tbody>
   </table>
 </div>
     <address>
