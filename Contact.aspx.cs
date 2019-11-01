@@ -51,33 +51,30 @@ namespace TPC_Soria
         }
         public string Dias()
         {
-            /*
-             * Meses con 31 dias: 1,3,5,7,8,10 y 12.
-             */
             DateTime today = DateTime.Today;
             string wk = today.DayOfWeek.ToString();
             switch (wk)
             {
                 case "Monday":
-                    wk = "L";
+                    wk = "Lu";
                     break;
                 case "Tuesday":
-                    wk = "M";
+                    wk = "Ma";
                     break;
                 case "Wednesday":
-                    wk = "M";
+                    wk = "Mi";
                     break;
                 case "Thursday":
-                    wk = "J";
+                    wk = "Ju";
                     break;
                 case "Friday":
-                    wk = "V";
+                    wk = "Vi";
                     break;
                 case "Saturday":
-                    wk = "S";
+                    wk = "Sa";
                     break;
                 case "Sunday":
-                    wk = "D";
+                    wk = "Do";
                     break;
                 default:
                     break;
@@ -87,7 +84,40 @@ namespace TPC_Soria
             string strT = "";
             while (d <= cant)
             {
-                strT += "<th style=\"width: auto; background - color: #d7ed7a\"> "+wk+" "+d+" </ th > ";
+                switch (wk)
+                {
+                    case "Lu":
+                        strT += "<th style=\"width: auto; background - color: #d7ed7a\"> " + wk + " " + d + " </ th > ";
+                        wk = "Ma";
+                        break;
+                    case "Ma":
+                        strT += "<th style=\"width: auto; background - color: #d7ed7a\"> " + wk + " " + d + " </ th > ";
+                        wk = "Mi";
+                        break;
+                    case "Mi":
+                        strT += "<th style=\"width: auto; background - color: #d7ed7a\"> " + wk + " " + d + " </ th > ";
+                        wk = "Ju";
+                        break;
+                    case "Ju":
+                        strT += "<th style=\"width: auto; background - color: #d7ed7a\"> " + wk + " " + d + " </ th > ";
+                        wk = "Vi";
+                        break;
+                    case "Vi":
+                        strT += "<th style=\"width: auto; background - color: #d7ed7a\"> " + wk + " " + d + " </ th > ";
+                        wk = "Lu";
+                        d += 2;
+                        break;
+                    case "Sa":
+                        wk = "Lu";
+                        d++;
+                        break;
+                    case "Do":
+                        wk = "Lu";
+                        break;
+                    default:
+                        break;
+                }
+                
                 d++;
             }
             return strT;
